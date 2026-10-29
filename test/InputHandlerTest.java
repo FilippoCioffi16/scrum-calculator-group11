@@ -1,6 +1,7 @@
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 
+
 public class InputHandlerTest {
 
     public static void main(String[] args) {
@@ -10,7 +11,7 @@ public class InputHandlerTest {
 
         try {
             // --- Test 1: Lettura di un numero valido ---
-            String simulatedInput1 = "12.5\n";
+            String simulatedInput1 = "12,5\n";
             System.setIn(new ByteArrayInputStream(simulatedInput1.getBytes()));
             InputHandler handler1 = new InputHandler();
             double num = handler1.readNumber("Inserisci un numero: ");
