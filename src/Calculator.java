@@ -2,22 +2,31 @@ public class Calculator {
 
     private double lastResult = 0; // US5
 
-    // ---- US2 ----
-    public double add(double a, double b)      { return 0; } // TODO US2
-    public double subtract(double a, double b) { return 0; } // TODO US2
+// ---- US2 ----
+public double add(double a, double b) {
+    lastResult = a + b;
+    return lastResult;
+}
 
-    // ---- US3 + US4 ----
-    public double multiply(double a, double b) { return 0; } // TODO US3
-    public double divide(double a, double b)   { return 0; } // TODO US3 + US4 (throws ArithmeticException if b == 0)
+public double subtract(double a, double b) {
+    lastResult = a - b;
+    return lastResult;
+}
 
-    // ---- US5 ----
-    public double getLastResult() { return lastResult; }     // TODO US5 (update lastResult in every operation)
+// ---- US3 + US4 ----
+public double multiply(double a, double b) {
+    lastResult = a * b;
+    return lastResult;
+}
 
-
-
-
-
-    
+public double divide(double a, double b) {
+    if (b == 0) {
+        throw new ArithmeticException("Division by zero is not allowed");
+    }
+    lastResult = a / b;
+    return lastResult;
+} 
+public double getLastResult() { return lastResult; }
     // ---- US6 (FUTURE) ----
     public void clear() { }                                  // TODO US6
 
