@@ -13,6 +13,11 @@ public class Calculator {
     // ---- US5 ----
     public double getLastResult() { return lastResult; }     // TODO US5 (update lastResult in every operation)
 
+
+
+
+
+    
     // ---- US6 (FUTURE) ----
     public void clear() { }                                  // TODO US6
 
