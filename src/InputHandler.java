@@ -5,4 +5,5 @@ public class InputHandler {
 
     public double readNumber(String prompt) { return 0; } // TODO US1
     public int readChoice()                 { return 0; } // TODO US1
+    public void printMenu()                 { }     
 }
